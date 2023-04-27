@@ -1,0 +1,46 @@
+.nav_bar{
+    display: flex;
+    padding: 1rem;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 0;
+}
+.icon_name{
+    font-weight: 600;
+    font-size: 2rem;
+}
+.nav_bar>ul{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    overflow: scroll;
+    -ms-overflow-style: none; 
+    scrollbar-width: none;
+}
+
+.nav_bar>ul::-webkit-scrollbar {
+    display: none;
+}
+
+.nav_bar>ul>li{
+    margin: 0 0.5rem;
+    text-transform: uppercase;
+    
+}
+.nav_bar>ul>li>a{
+    text-decoration: none;
+    color: black;
+}
+
+.active{
+    border:2px solid red;
+    padding: 10px
+    
+}
+
+@media screen and (max-width:375px){
+    
+    .nav_bar>ul>li>a{
+        font-size: 12px;
+    }
+}
